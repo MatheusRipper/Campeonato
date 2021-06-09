@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>Campeonato</title>
+</head>
+
+<body>
+  <div class="header">
+    <img class="banner_image" src="https://i.pinimg.com/originals/ca/c0/16/cac016ef08a2e7168173341b241d751a.jpg" alt="" title="Nome do seu Torneio">
+    <h1 class="banner_title">Nome do seu torneio</h1>
+    <script>
+      var nome = window.prompt('Escolha um nome para o seu Torneio:', 'Torneio Alura');
+      document.getElementsByClassName('banner_title')[0].textContent = `${nome}`;
+    </script>
+  </div>
+  <div class="times">
+    <div class="addtimes">
+      <input type="text" id="nameTeam" placeholder="Nome_Time" onfocus="this.value='';" autofocus></input>
+      <input type="button" id="inserirTime" value="✔️" onclick="inserirTime()">
+    </div>
+  </div>
+  <div class="tabela">
+    <table>
+      <thead id="top"></thead>
+      <tbody id="contenTable"></tbody>
+    </table>
+    <div id="champs"></div>
+    <div id="win"></div>
+  </div>
+</body>
+
+</html>
